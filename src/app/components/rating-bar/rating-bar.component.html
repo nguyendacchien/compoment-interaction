@@ -1,0 +1,8 @@
+<!-- Add icon library -->
+<div>
+<!--<span class="fa fa-star checked"></span>-->
+<!--<span class="fa fa-star checked"></span>-->
+<!--<span class="fa fa-star checked"></span>-->
+<!--<span class="fa fa-star"></span>-->
+<span class="fa fa-star" *ngFor="let ratingUnit of ratingUnits; let i =index" (click)="select(i)" [class.checked]="ratingUnit.active" (mouseover)="enter(i)"></span>
+</div>
